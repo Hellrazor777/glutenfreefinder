@@ -1,25 +1,61 @@
 {
   "expo": {
-    "name": "gff",
-    "slug": "gff",
+    "name": "GFF",
+    "slug": "gluten-free-finder",
+    "scheme": "gff",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/gff-logo.png",
     "userInterfaceStyle": "light",
+    "primaryColor": "#C9922A",
+    "splash": {
+      "image": "./assets/gff-logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F6EFE2"
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "online.glutenfreefinder.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "GFF fills your Australian postcode only when you tap the postcode field."
+      }
     },
     "android": {
+      "package": "online.glutenfreefinder.app",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "backgroundColor": "#F6EFE2",
+        "foregroundImage": "./assets/gff-logo.png"
       },
-      "predictiveBackGestureEnabled": false
+      "permissions": ["ACCESS_COARSE_LOCATION", "ACCESS_FINE_LOCATION"]
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "output": "static",
+      "favicon": "./assets/gff-logo.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-image",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "GFF fills your Australian postcode only when you tap the postcode field."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/gff-logo.png",
+          "color": "#C9922A"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "replace-after-eas-init"
+      }
+    },
+    "owner": "hellrazor777"
   }
 }
