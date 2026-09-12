@@ -1,0 +1,22 @@
+[
+  { "externalId": "gf-001", "name": "Sweet Freedom Bakery", "city": "Philadelphia", "cuisine": "Bakery", "address": "1424 South St", "dedicatedGf": true, "rating": 4.8 },
+  { "externalId": "gf-002", "name": "Senza Gluten", "city": "New York", "cuisine": "Italian", "address": "206 Sullivan St", "dedicatedGf": true, "rating": 4.6 },
+  { "externalId": "gf-003", "name": "Friedman's", "city": "New York", "cuisine": "American", "address": "132 W 31st St", "dedicatedGf": false, "rating": 4.3 },
+  { "externalId": "gf-004", "name": "Wildflour Bakery & Cafe", "city": "Los Angeles", "cuisine": "Bakery", "address": "8060 W 3rd St", "dedicatedGf": true, "rating": 4.5 },
+  { "externalId": "gf-005", "name": "Erin McKenna's Bakery", "city": "Los Angeles", "cuisine": "Bakery", "address": "236 N Larchmont Blvd", "dedicatedGf": true, "rating": 4.4 },
+  { "externalId": "gf-006", "name": "Picnic Cafe", "city": "Austin", "cuisine": "Cafe", "address": "1720 Barton Springs Rd", "dedicatedGf": false, "rating": 4.2 },
+  { "externalId": "gf-007", "name": "Wildwood Bakehouse", "city": "Austin", "cuisine": "Bakery", "address": "12506 Shops Pkwy", "dedicatedGf": true, "rating": 4.7 },
+  { "externalId": "gf-008", "name": "Deby's Gluten Free", "city": "Denver", "cuisine": "American", "address": "2369 S Trenton Way", "dedicatedGf": true, "rating": 4.6 },
+  { "externalId": "gf-009", "name": "Zucca Trattoria", "city": "Denver", "cuisine": "Italian", "address": "808 3rd Ave", "dedicatedGf": false, "rating": 4.1 },
+  { "externalId": "gf-010", "name": "Ground Breaker Brewing", "city": "Portland", "cuisine": "Brewpub", "address": "2030 SE 7th Ave", "dedicatedGf": true, "rating": 4.5 },
+  { "externalId": "gf-011", "name": "Petunia's Pies & Pastries", "city": "Portland", "cuisine": "Bakery", "address": "610 SW 12th Ave", "dedicatedGf": true, "rating": 4.6 },
+  { "externalId": "gf-012", "name": "Modern Love", "city": "Brooklyn", "cuisine": "Vegan", "address": "317 Union Ave", "dedicatedGf": false, "rating": 4.3 },
+  { "externalId": "gf-013", "name": "Jennifer's Way Bakery", "city": "New York", "cuisine": "Bakery", "address": "263 E 10th St", "dedicatedGf": true, "rating": 4.4 },
+  { "externalId": "gf-014", "name": "Bistro Central Parc", "city": "New York", "cuisine": "French", "address": "9th Ave", "dedicatedGf": false, "rating": 4.0 },
+  { "externalId": "gf-015", "name": "The Sensitive Baker", "city": "Los Angeles", "cuisine": "Bakery", "address": "10836 Washington Blvd", "dedicatedGf": true, "rating": 4.5 },
+  { "externalId": "gf-016", "name": "Bake Free Bakehouse", "city": "Chicago", "cuisine": "Bakery", "address": "1357 N Wells St", "dedicatedGf": true, "rating": 4.6 },
+  { "externalId": "gf-017", "name": "Wheat's End Cafe", "city": "Chicago", "cuisine": "Cafe", "address": "1367 N Wells St", "dedicatedGf": true, "rating": 4.7 },
+  { "externalId": "gf-018", "name": "Da Luciano", "city": "Chicago", "cuisine": "Italian", "address": "601 Chicago Ave", "dedicatedGf": false, "rating": 4.2 },
+  { "externalId": "gf-019", "name": "Rising Hearts Bakery", "city": "Seattle", "cuisine": "Bakery", "address": "912 12th Ave", "dedicatedGf": true, "rating": 4.4 },
+  { "externalId": "gf-020", "name": "Ghostfish Brewing", "city": "Seattle", "cuisine": "Brewpub", "address": "2942 1st Ave S", "dedicatedGf": true, "rating": 4.6 }
+]

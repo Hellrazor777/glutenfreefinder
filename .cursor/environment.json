@@ -1,0 +1,25 @@
+{
+  "name": "GlutenFreeFinder",
+  "install": "npm ci",
+  "terminals": [
+    {
+      "name": "api",
+      "command": "npm run dev:api",
+      "description": "GlutenFreeFinder REST API (Express + SQLite) on http://localhost:3001"
+    },
+    {
+      "name": "collector",
+      "command": "npm run start:collector",
+      "description": "Ingests gluten-free venues into the API, then re-collects on an interval"
+    },
+    {
+      "name": "web",
+      "command": "npm run dev:web",
+      "description": "React + Vite web app on http://localhost:5173 (proxies /api to the API)"
+    }
+  ],
+  "ports": [
+    { "name": "api", "port": 3001 },
+    { "name": "web", "port": 5173 }
+  ]
+}

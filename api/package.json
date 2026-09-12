@@ -1,0 +1,18 @@
+{
+  "name": "@gff/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "GlutenFreeFinder REST API",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node src/server.js",
+    "start": "node src/server.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.8.1",
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}

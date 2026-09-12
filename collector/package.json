@@ -1,0 +1,12 @@
+{
+  "name": "@gff/collector",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "GlutenFreeFinder data collector - ingests gluten-free venues into the API",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "once": "node src/index.js --once"
+  }
+}

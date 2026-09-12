@@ -1,0 +1,13 @@
+node_modules/
+dist/
+*.log
+
+# Local SQLite database (created at runtime by the API)
+api/data/
+*.db
+*.db-wal
+*.db-shm
+
+.DS_Store
+.env
+.env.local
