@@ -26,7 +26,10 @@
         "backgroundColor": "#F6EFE2",
         "foregroundImage": "./assets/gff-logo.png"
       },
-      "permissions": ["ACCESS_COARSE_LOCATION", "ACCESS_FINE_LOCATION"]
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ]
     },
     "web": {
       "output": "static",
@@ -49,12 +52,15 @@
           "icon": "./assets/gff-logo.png",
           "color": "#C9922A"
         }
-      ]
+      ],
+      "expo-localization"
     ],
     "extra": {
       "eas": {
         "projectId": "replace-after-eas-init"
-      }
+      },
+      "posthogKey": "phc_uKBqegXYEqDn7M8qgcavMNkcRwxoqGVkhUeqXSHaqmJG",
+      "posthogHost": "https://us.i.posthog.com"
     },
     "owner": "hellrazor777"
   }

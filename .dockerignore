@@ -1,0 +1,12 @@
+node_modules
+.expo
+dist
+.git
+.github
+.claude
+.vscode
+*.md
+npm-debug.*
+.env
+.env.*
+!.env.example
