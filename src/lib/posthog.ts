@@ -1,6 +1,7 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import Constants from "expo-constants";
 import PostHog from "posthog-react-native";
+import type { PostHogCustomStorage } from "posthog-react-native";
 import { Platform } from "react-native";
 
 const DEFAULT_KEY = "phc_uKBqegXYEqDn7M8qgcavMNkcRwxoqGVkhUeqXSHaqmJG";
@@ -23,6 +24,27 @@ export const posthogApiKey =
 export const posthogHost =
   process.env.EXPO_PUBLIC_POSTHOG_HOST || extra.posthogHost || DEFAULT_HOST;
 
+const isDomAvailable = () => typeof window !== "undefined";
+
+/**
+ * AsyncStorage's web backend reads `window` immediately. Expo static export
+ * evaluates the root layout in Node, so storage must no-op without a DOM.
+ */
+const persistStorage: PostHogCustomStorage = {
+  getItem(key) {
+    if (!isDomAvailable()) {
+      return null;
+    }
+    return AsyncStorage.getItem(key);
+  },
+  setItem(key, value) {
+    if (!isDomAvailable()) {
+      return;
+    }
+    return AsyncStorage.setItem(key, value);
+  },
+};
+
 /**
  * Shared PostHog client for Expo web + native.
  *
@@ -36,7 +58,8 @@ export const posthog = new PostHog(posthogApiKey, {
   captureAppLifecycleEvents: true,
   enableSessionReplay: false,
   persistence: "file",
-  customStorage: AsyncStorage,
+  customStorage: persistStorage,
+  disabled: !isDomAvailable(),
   // Web traffic is low-volume; flush quickly so pageviews show up in PostHog.
   flushAt: Platform.OS === "web" ? 1 : 20,
   flushInterval: Platform.OS === "web" ? 2000 : 10000,
